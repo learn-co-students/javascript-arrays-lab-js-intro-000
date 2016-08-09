@@ -1,3 +1,16 @@
 const app = "I don't do much.";
 var kittens = ["Milo", "Otis", "Garfield"];
-function destructivelyAppendKitten(kittens, n){kittens.push(n);return kittens};
+function destructivelyAppendKitten(n){kittens.push(n)};
+var kittens = ["Milo", "Otis", "Garfield"];
+function destructivelyPrependKitten(n){kittens.unshift(n)};
+var kittens = ["Milo", "Otis", "Garfield"];
+function destructivelyRemoveLastKitten(){kittens.pop()};
+var kittens = ["Milo", "Otis", "Garfield"];
+function destructivelyRemoveFirstKitten(){kittens.shift()};
+var kittens = ["Milo", "Otis", "Garfield"];
+function appendKitten(n) {return [...kittens, n]};
+var kittens = ["Milo", "Otis", "Garfield"];
+function prependKitten(n){return [n,...kittens]};
+var kittens = ["Milo", "Otis", "Garfield"];
+function removeLastKitten(){return kittens.slice(0, kittens.length-1)};
+function removeFirstKitten(){return kittens.slice(1)};
