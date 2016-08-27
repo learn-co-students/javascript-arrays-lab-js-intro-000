@@ -30,19 +30,23 @@ function prependKitten(name){
 }
 
 function removeLastKitten(){
-  let newKittens=[];
+/*  let newKittens=[];
   for (let kitten in kittens){
     newKittens.push(kittens[kitten]);
   }
     newKittens.pop();
   return newKittens;
+  */
+  return kittens.slice(0,-1);
 }
 
 function removeFirstKitten(){
-  let newKittens=[];
+  /* let newKittens=[];
   for (let kitten in kittens){
     newKittens.push(kittens[kitten]);
   }
     newKittens.shift();
   return newKittens;
+  */
+  return kittens.slice(1);
 }
