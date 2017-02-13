@@ -1,41 +1,35 @@
-
-
-function destructivelyAppendKitten(name){
-  kittens.push(name);
-  return kittens;
-};
+function destructivelyAppendKitten (name){
+  return kittens.push(name)
+}
 
 function destructivelyPrependKitten(name){
-  kittens.unshift(name);
-  return kittens;
-};
+  return kittens.unshift(name)
+}
 
 function destructivelyRemoveLastKitten(){
-  kittens.pop();
-  return kittens;
-};
+  return kittens.pop()
+}
 
 function destructivelyRemoveFirstKitten(){
-  kittens.shift();
-  return kittens;
-};
+  return kittens.shift()
+}
 
 function appendKitten(name){
-  var array2 = [...kittens, name];
-  return array2;
-};
+   return [...kittens, name];
+   return kittens
+}
 
 function prependKitten(name){
-  var array2 = [name, ...kittens];
-  return array2;
-};
+  return [name, ...kittens];
+  return kittens
+}
 
 function removeLastKitten(){
-  var slice = kittens.slice(0,-1);
-  return slice;
-};
+  var array = kittens.slice(0, kittens.length -1)
+  return array
+}
 
 function removeFirstKitten(){
-  var slice = kittens.slice(1);
-  return slice;
-};
+  var array = kittens.slice(1)
+  return array
+}
