@@ -1,6 +1,7 @@
 describe('Arrays', function() {
   beforeEach(function() {
     window.kittens = ['Milo', 'Otis', 'Garfield'];
+    unshift('kitten')
   });
 
   describe('kittens', function() {
