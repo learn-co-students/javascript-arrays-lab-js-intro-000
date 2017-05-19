@@ -2,50 +2,35 @@ const app = "I don't do much."
 
 var kittens = ["Milo", "Otis", "Garfield"];
 
-function destructivelyAppendKitten(n) {
-    var c = kittens.push(n);
-    return c;
+
+function destructivelyAppendKitten(name) {
+    kittens.push(name)
 }
 
-var kittens = ["Milo", "Otis", "Garfield"];
-
-function destructivelyPrependKitten(n) {
-    var c = kittens.unshift(n);
-    return c;
+function destructivelyPrependKitten(name) {
+    kittens.unshift(name)
 }
 
-var kittens = ["Milo", "Otis", "Garfield"];
-
-function destructivelyRemoveLastKitten(n) {
-    var c = kittens.pop(n);
-    return c;
+function destructivelyRemoveLastKitten() {
+    kittens.pop()
 }
 
-var kittens = ["Milo", "Otis", "Garfield"];
-
-function destructivelyRemoveFirstKitten(n) {
-    var c = kittens.shift(n);
-    return c;
+function destructivelyRemoveFirstKitten() {
+    kittens.shift(1)
 }
 
-var kittens = ["Milo", "Otis", "Garfield"];
-
-function appendKitten(n) {
-  var c = [...kittens, n];
-  return c;
+function appendKitten(name) {
+  return [...kittens, name]
 }
 
-function prependKitten(n) {
-  var c = [n, ...kittens];
-  return c;
+function prependKitten(name) {
+  return [name, ...kittens]
 }
 
-function removeLastKitten(n) {
-  var c = kittens.slice(0, kittens.length - 1)
-  return c;
+function removeLastKitten() {
+    return kittens.slice(0, kittens.length -1)
 }
 
 function removeFirstKitten() {
-  var c = kittens.slice(1);
-  return c;
+    return (kittens.slice(1))
 }
