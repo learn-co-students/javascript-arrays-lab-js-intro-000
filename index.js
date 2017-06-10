@@ -1,4 +1,3 @@
-const app = "I don't do much."
 const kittens = ["Milo", "Otis", "Garfield"]
 
 function destructivelyAppendKitten(name){
@@ -9,12 +8,12 @@ function destructivelyPrependKitten(name){
   return kittens.unshift(name)
 }
 
-function destructivelyRemoveLastKitten(name){
-  return kittens.pop(name)
+function destructivelyRemoveLastKitten(){
+  return kittens.pop()
 }
 
-function destructivelyRemoveFirstKitten(name){
-  return kittens.shift(name)
+function destructivelyRemoveFirstKitten(){
+  return kittens.shift()
 }
 
 function appendKitten(name){
