@@ -25,9 +25,9 @@ return kittens.concat(name);
 }
 
 function prependKitten(name) {
-return kittens.unshift(..."Arnold");
+return kittens.unshift("Arnold");
 }
 
 function removeLastKitten() {
-  return kittens.pop("Garfield");
-}
+   return kittens.pop('Garfield');
+ }
