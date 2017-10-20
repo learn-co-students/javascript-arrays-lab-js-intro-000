@@ -9,3 +9,9 @@ function destructivelyPrependKitten(name){
   kittens.unshift(name)
   return kittens
 }
+
+
+function destructivelyRemoveLastKitten(name){
+  var n = kittens.length;
+  kittens.slice(0, n-1)
+}
