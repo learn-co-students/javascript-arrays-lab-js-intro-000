@@ -10,8 +10,36 @@ function destructivelyPrependKitten(name){
   return kittens
 }
 
+function destructivelyRemoveLastKitten(){
+  var n = kittens.length
+  kittens = kittens.slice(0, n-1);
+  return kittens
+}
 
-function destructivelyRemoveLastKitten(name){
-  var n = kittens.length;
-  kittens.slice(0, n-1)
+function destructivelyRemoveFirstKitten(){
+  var n = kittens.length
+  kittens = kittens.slice(1);
+  return kittens
+}
+
+function appendKitten(name){
+  var moreKittens = [...kittens, name];
+  return moreKittens
+}
+
+function prependKitten(name){
+  var moreKittens = [name, ...kittens];
+  return moreKittens
+}
+
+function removeLastKitten(){
+  var n = kittens.length
+  var lessKittens = kittens.slice(0, n-1);
+  return lessKittens
+}
+
+function removeFirstKitten(){
+  var n = kittens.length
+  var lessKittens = kittens.slice(1);
+  return lessKittens
 }
