@@ -1,77 +1,48 @@
 const kittens = ["Milo", "Otis", "Garfield"]
 
-function kittens() {
+function myKittens() {
   var kittens = ["Milo", "Otis", "Garfield"]
   return kittens
 }
 
 function destructivelyAppendKitten(name) {
-  var kittens = ["Milo", "Otis", "Garfield"]
   kittens.push(name)
+  return kittens
 }
 
 function destructivelyPrependKitten(name) {
-  var kittens = ["Milo", "Otis", "Garfield"]
   kittens.unshift(name)
+  return kittens
 }
-/* describe('Arrays', function() {
-  beforeEach(function() {
-    window.kittens = ['Milo', 'Otis', 'Garfield'];
-  });
 
-  describe('kittens', function() {
-    it('defines kittens as `var kittens = ["Milo", "Otis", "Garfield"]`', function() {
-      expect(window.kittens).toEqual(["Milo", "Otis", "Garfield"])
-    })
-  })
+function destructivelyRemoveLastKitten() {
+  kittens.pop()
+  return kittens
+}
 
-  describe('destructivelyAppendKitten(name)', function() {
-    it('appends a kitten to the end of the kittens array', function() {
-      destructivelyAppendKitten('Ralph')
-      expect(window.kittens).toEqual(["Milo", "Otis", "Garfield", "Ralph"])
-    })
-  })
+function destructivelyRemoveFirstKitten() {
+  kittens.shift()
+  return kittens
+}
 
-  describe('destructivelyPrependKitten(name)', function() {
-    it('prepends a kitten to the beginning of the kittens array', function() {
-      destructivelyPrependKitten("Bob")
+function appendKitten(name) {
+  return [...kittens, name]
+}
 
-      expect(window.kittens).toEqual(["Bob", "Milo", "Otis", "Garfield"])
-    })
-  })
+function prependKitten(name) {
+  return [name,...kittens]
+}
 
-  describe('destructivelyRemoveLastKitten()', function() {
-    it('removes the last kitten from the kittens array', function() {
-      destructivelyRemoveLastKitten()
+function removeLastKitten(name) {
+  return kittens.slice(0, kittens.length - 1)
+}
 
-      expect(window.kittens).toEqual(["Milo", "Otis"])
-    })
-  })
+function removeFirstKitten(name) {
+  return kittens.slice(1)
+}
 
-  describe('destructivelyRemoveFirstKitten()', function() {
-    it('removes the First kitten from the kittens array', function() {
-      destructivelyRemoveFirstKitten()
 
-      expect(window.kittens).toEqual(["Otis", "Garfield"])
-    })
-  })
-
-  describe('appendKitten(name)', function() {
-    it('appends a kitten to the kittens array and returns a new array, leaving the kittens array unchanged', function() {
-      expect(appendKitten("Broom")).toEqual(["Milo", "Otis", "Garfield", "Broom"])
-
-      expect(window.kittens).toEqual(["Milo", "Otis", "Garfield"])
-    })
-  })
-
-  describe('prependKitten(name)', function() {
-    it('prepends a kitten to the kittens array and returns a new array, leaving the kittens array unchanged', function() {
-      expect(prependKitten("Arnold")).toEqual(["Arnold", "Milo", "Otis", "Garfield"])
-
-      expect(window.kittens).toEqual(["Milo", "Otis", "Garfield"])
-    })
-  })
-
+/*
   describe('removeLastKitten()', function() {
     it('removes the last kitten in the kittens array and returns a new array, leaving the kittens array unchanged', function() {
       expect(removeLastKitten()).toEqual(["Milo", "Otis"])
