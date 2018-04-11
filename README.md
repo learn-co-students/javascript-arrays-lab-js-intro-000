@@ -1,4 +1,4 @@
-JavaScript Arrays Lab
+npmJavaScript Arrays Lab
 ---
 
 ## Objectives
