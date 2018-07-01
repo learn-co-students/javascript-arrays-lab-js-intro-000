@@ -1,41 +1,37 @@
 kittens = ["Milo", "Otis", "Garfield"]
 
-function destructivelyAppendKitten(name) {
-  kittens.push('Ralph')
-  return kittens
+function destructivelyAppendKitten(name){
+  return kittens.push(name)
 }
 
-function destructivelyPrependKitten(name) {
-  kittens.unshift('Bob')
-  return kittens
+function destructivelyPrependKitten(name){
+  return kittens.unshift(name)
 }
 
 function destructivelyRemoveLastKitten(){
-  kittens.pop() //removes last element - kitten
-  return kittens
+  return kittens.pop();
 }
 
-function destructivelyRemoveFirstKitten() {
-  kittens.shift()
-  return kittens
+function destructivelyRemoveFirstKitten(){
+  return kittens.shift();
 }
 
-function appendKitten(name) {
-  var kittens1 = [...kittens, 'Broom']
-  return kittens1
+function appendKitten(name){
+  var kittens2 = [...kittens, name]
+  return kittens2
 }
 
 function prependKitten(name){
-  var kittens2 = ['Arnold', ...kittens]
+  var kittens2 = [name, ...kittens]
   return kittens2
 }
 
 function removeLastKitten(){
-  var kittens3 = kittens.slice(0, kittens.length - 1)
-  return kittens3
+  var kittens2 = kittens.slice(0, kittens.length - 1)
+  return kittens2
 }
 
 function removeFirstKitten(){
-  var kittens4 = kittens.slice(1, kittens.length)
-  return kittens4
+  var kittens2 = kittens.slice(1)
+  return kittens2
 }
