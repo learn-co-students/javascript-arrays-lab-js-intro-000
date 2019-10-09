@@ -9,13 +9,24 @@ function destructivelyAppendKitten (name) {
 var kittens = ["Milo","Otis","Garfield"]; //define your array here
 
 // Add your functions and code here - prepend to beginn - unshift
+*/
+
+/*
+// Add your functions and code here - dest append - push
+function destructivelyAppendKitten (name) {
+  return kittens.push(name);
+} */
+
+var kittens = ["Milo","Otis","Garfield"]; //define your array here
+
+// Add your functions and code here - prepend to beginn - unshift
 
 function destructivelyPrependKitten (kittens,name="Bob") {
   kittens.unshift (name);
   
   return kittens
 }
-*/
+
 
 var kittens = ["Milo","Otis","Garfield"]; //define your array here
 
