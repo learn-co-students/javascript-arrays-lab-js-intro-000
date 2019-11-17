@@ -16,3 +16,23 @@ kittens.unshift(name);
 function destructivelyRemoveFirstKitten(){
 kittens.shift();
 }
+
+function appendKitten(name){
+  var  moreKittens = [...kittens,name];
+  return moreKittens;
+}
+
+function prependKitten(name){
+  var moreKittens = [name,...kittens];
+  return moreKittens
+}
+
+function removeLastKitten(){
+  var moreKittens = kittens.slice(0,kittens.length-1);
+  return moreKittens;
+}
+
+function removeFirstKitten(){
+  var moreKittens = kittens.slice(1);
+  return moreKittens;
+}
