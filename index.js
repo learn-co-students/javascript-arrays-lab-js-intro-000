@@ -20,7 +20,7 @@ function destructivelyRemoveFirstKitten() {
 }
 
 function appendKitten(name) {
-  return [...kittens, name] //this method doesn't manipulate the array and you can still return the original array
+  return [...kittens, name]                     //this method doesn't manipulate the array and you can still return the original array
 }
 
 function prependKitten(name) {
@@ -29,10 +29,10 @@ function prependKitten(name) {
 
 function removeLastKitten() {
   return kittens.slice(0, kittens.length - 1)   //using the slice method we can create a new array without changing the original.
-                                                        //this method can slice out any part of the array without mutating the original.
+                                                //this method can slice out any part of the array without mutating the original.
 }
 
 function removeFirstKitten() {
-  return kittens.slice(1)    //using the slice method we can create a new array without changing the original.
+  return kittens.slice(1)                       //using the slice method we can create a new array without changing the original.
 
 }
