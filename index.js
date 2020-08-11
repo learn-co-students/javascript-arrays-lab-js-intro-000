@@ -1,7 +1,8 @@
 var kittens = ["Milo", "Otis", "Garfield"] //define your array here
 // Add your functions and code here
 var destructivelyAppendKitten = (array, name) => {
-  kittens.push("Ralph");
+  kittens.push(name);
+  var name = "Ralph";
   return kittens
 }
 
@@ -28,7 +29,3 @@ var destructivelyRemoveFirstKitten = (array, name) => {
 
 var kittens = ["Milo", "Otis", "Garfield"]
 
-var appendKitten = (array, name) => {
-  var name = "Broom";
-  return [array...,name]
-}
